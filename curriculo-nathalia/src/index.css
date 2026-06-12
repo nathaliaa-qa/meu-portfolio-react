@@ -1,4 +1,3 @@
-/* src/index.css */
 :root {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -10,13 +9,11 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Deixar os títulos um pouco mais modernos */
 h1, h2, h3 {
   margin-top: 0;
   font-weight: 600;
 }
 
-/* Adicionar um efeito de hover nos botões */
 button {
   border: none;
   border-radius: 6px;

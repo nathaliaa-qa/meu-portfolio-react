@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useState } from 'react';
 import Header from './components/Header';
 import Card from './components/Card';
@@ -38,7 +37,6 @@ export default function App() {
     }
   ];
 
-  // Cores das habilidades acompanhando o turquesa esverdeado escuro
   const categoriasSkills = [
     {
       titulo: "🔮 Core Técnico & Onde minha Paixão mora (Dados & Pesquisa)",
@@ -71,15 +69,13 @@ export default function App() {
 
   return (
     <div style={{ 
-      // Fundo super claro (quase branco) para dar destaque ao cabeçalho colorido
       backgroundColor: darkMode ? '#121212' : '#f8f9fa', 
       color: darkMode ? '#f8f9fa' : '#333333',
       minHeight: '100vh',
-      fontFamily: "'Segoe UI', Roboto, Helvetica, Arial, sans-serif", // Fonte mais moderna
+      fontFamily: "'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
       transition: 'all 0.3s ease'
     }}>
       
-      {/* O Header agora cuida da própria cor de fundo */}
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
 
       <main style={{ maxWidth: '800px', margin: '0 auto', padding: '40px 20px' }}>
@@ -109,7 +105,7 @@ export default function App() {
                       backgroundColor: skill.cor,
                       color: '#ffffff',
                       padding: '8px 16px',
-                      borderRadius: '50px', // Tags arredondadas combinando com os botões
+                      borderRadius: '50px', 
                       fontSize: '12px',
                       fontWeight: 'bold',
                       letterSpacing: '0.5px',

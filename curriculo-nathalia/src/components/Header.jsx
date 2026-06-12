@@ -1,7 +1,5 @@
-// src/components/Header.jsx
 import React, { useState } from 'react';
 
-// Criamos um mini-componente aqui mesmo para gerenciar a animação de cada botão individualmente
 const BotaoContato = ({ href, icone, texto, darkMode }) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -25,10 +23,9 @@ const BotaoContato = ({ href, icone, texto, darkMode }) => {
         display: 'inline-flex',
         alignItems: 'center',
         gap: '8px',
-        // Aqui acontece a mágica da animação:
         transform: isHovered ? 'translateY(-4px) scale(1.05)' : 'translateY(0) scale(1)',
         boxShadow: isHovered ? '0 10px 15px rgba(0,0,0,0.2)' : '0 4px 6px rgba(0,0,0,0.1)',
-        transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)' // Transição super suave
+        transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)' 
       }}
     >
       <span>{icone}</span> {texto}
@@ -91,7 +88,6 @@ export default function Header({ darkMode, setDarkMode }) {
         Desenvolvedora Full Stack em Formação
       </p>
 
-      {/* Renderizando os nossos novos botões animados */}
       <div style={{ 
         display: 'flex', 
         flexDirection: 'row', 
